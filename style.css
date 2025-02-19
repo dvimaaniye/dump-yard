@@ -5,6 +5,8 @@ body {
 	padding: 1rem;
 	max-width: 70ch;
 	margin-inline: auto;
+	background: #ccc;
+	color: #222;
 }
 pre {
 	white-space: pre-wrap;
