@@ -1,16 +1,19 @@
+* {
+	box-sizing: content-box;
+}
 body {
 	font-family: monospace;
 	font-size: 1rem;
 	margin: 0;
 	padding: 1rem;
-	max-width: 70ch;
-	margin-inline: auto;
 	background: #ccc;
 	color: #222;
 }
 pre {
 	white-space: pre-wrap;
 	word-wrap: break-word;
+	max-width: 70ch;
+	margin-inline: auto;
 }
 
 @media (prefers-color-scheme: dark) {
