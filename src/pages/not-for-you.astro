@@ -2,6 +2,7 @@
 import BaseHead from "@/components/BaseHead.astro";
 import FormattedDate from "@/components/FormattedDate.astro";
 import Navbar from "@/components/Navbar.astro";
+import { SITE_TITLE } from "@/consts";
 import { getCollection } from "astro:content";
 
 const notForYouPosts = (await getCollection("blog"))
@@ -12,7 +13,10 @@ const notForYouPosts = (await getCollection("blog"))
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title="Not for you - dump yard" description="Yapping pro max" />
+		<BaseHead
+			title={`Not for you - ${SITE_TITLE}`}
+			description="Yapping pro max"
+		/>
 	</head>
 	<body>
 		<Navbar />
