@@ -1,0 +1,43 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import FormattedDate from "@/components/FormattedDate.astro";
+import Navbar from "@/components/Navbar.astro";
+import { getCollection } from "astro:content";
+
+const notForYouPosts = (await getCollection("blog"))
+	.filter(({ data }) => data.tags.includes("not-for-you"))
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Not for you - dump yard" description="Yapping pro max" />
+	</head>
+	<body>
+		<Navbar />
+		<main class="container">
+			<section>
+				<div class="text-right mb-4">
+					<p class="text-sm">Yapping pro max</p>
+					<h2 class="text-3xl font-bold">Not for you</h2>
+				</div>
+				<ol class="list-decimal space-y-4">
+					{
+						notForYouPosts.map((post) => (
+							<li>
+								<a href={`/blog/${post.id}/`} class="inline">
+									<h4 class="inline">{post.data.title}</h4>
+									&nbsp;-&nbsp;
+									<p class="inline">
+										<FormattedDate date={post.data.pubDate} />
+									</p>
+								</a>
+							</li>
+						))
+					}
+				</ol>
+			</section>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    font-family: inherit;
+  }
+
+  ::selection {
+    background: #181;
+    color: #fff;
+  }
+
+  a {
+    @apply text-inherit underline underline-offset-4;
+  }
+
+  a:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px currentColor;
+  }
+
+  a:hover,
+  a:focus {
+    font-weight: bolder;
+    text-decoration-thickness: 2px;
+  }
+
+  body {
+    font-family: "IBM Plex Mono", monospace;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 1rem;
+    color: #181818;
+    background: #ddd;
+    background: linear-gradient(135deg, #ddd, #d5d5d5);
+    min-height: 100vh;
+  }
+
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 70ch;
+    margin-inline: auto;
+  }
+
+  h2 {
+    margin-block: 0rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      color: #ddd;
+      background: #181818;
+      background: linear-gradient(135deg, #181818, #111);
+    }
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply max-w-3xl mx-auto px-4 py-4;
+  }
+}

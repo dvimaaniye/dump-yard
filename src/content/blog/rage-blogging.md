@@ -1,22 +1,10 @@
-<head>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3CB2V698S3"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-3CB2V698S3');
-	</script>
-	<meta name="viewport" content="width=device-width, initial-scale=1" >
-	<link href="style.css" rel="stylesheet" >
-	<title>Rage Blogging - Dump Yard</title>
-</head>
-
-<pre>
-<h1>Rage Blogging</h1>
-
-i fucking hate being around stupid self-eccentric people, everything sucks, I'm so irrtitable and miserable these days idk wtf happened, one thing after the another sucked the joy and fun out of my life. I was in a phase where I was happy, not-toxic (okay slightly toxic still), but it was light hearted, I didn't had an attitude. but people I hate people and more than people I hate stupid people because they have the arrogance of a King and the brain of a jellyfish (Oo but  jellyfish don't have brains, exactly my point).
+---
+title: 'RAGE BLOGGING'
+description: "this is just the anger speaking, I'm just clearing out my head"
+pubDate: 'Mar 06 2025'
+tags: ['not-for-you']
+---
+i fucking hate being around stupid self-eccentric people, everything sucks, I'm so irrtitable and miserable these days idk wtf happened, one thing after the another sucked the joy and fun out of my life. I was in a phase where I was happy, not-toxic (okay slightly toxic still), but it was light hearted, I didn't had an attitude. but people I hate people and more than people I hate stupid people because they have the arrogance of a king and the brain of a jellyfish (Oo but jellyfish don't have brains, yea).
 
 (and people, stop living in your fucking bubble, real world matters and what happens in the real world matters. not everything is "chalta hai" and not everything is about you in your little stupid bubble.)
 
@@ -26,11 +14,4 @@ i hate being a double edged sword, I hate lying and lying people, but lately in 
 
 One thing after the other and the joy was sucked out and the white dove in my head was shot dead and in all this I fucking hate kids (unless they are mine i guess). little babies are fine they are innocent lives but once they are 2-3yrs old, hate them, I hate them. 
 
-
 Just ignore this blog, this is just the anger speaking, I'm just clearing out my head. Putting this at the end and not the start because I also hate prefacing what I say.
-
-Dated : 06 Mar, 2025
-
-Back to <a href="index.html">Home</a>
-
-</pre>
