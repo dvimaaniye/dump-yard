@@ -30,9 +30,9 @@
     line-height: 1.6em;
     margin: 0;
     padding: 1rem;
-    color: #181818;
-    background: #ddd;
-    background: linear-gradient(135deg, #ddd, #d5d5d5);
+    color: #ddd;
+    background: #181818;
+    background: linear-gradient(135deg, #181818, #111);
     min-height: 100vh;
   }
 
@@ -47,11 +47,11 @@
     margin-block: 0rem;
   }
 
-  @media (prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: light) {
     body {
-      color: #ddd;
-      background: #181818;
-      background: linear-gradient(135deg, #181818, #111);
+      color: #181818;
+      background: #ddd;
+      background: linear-gradient(135deg, #ddd, #d5d5d5);
     }
   }
 }
