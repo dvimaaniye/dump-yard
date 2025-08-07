@@ -14,11 +14,13 @@
     @apply text-inherit underline underline-offset-4;
   }
 
-  a:focus {
+  /* keyboard attained focus */
+  a:focus-visible {
     outline: none;
     box-shadow: 0 0 0 2px currentColor;
   }
 
+  a:hover,
   a:hover,
   a:focus {
     font-weight: bolder;
@@ -43,8 +45,63 @@
     margin-inline: auto;
   }
 
+  ul,
+  ol {
+    @apply list-inside space-y-2 mb-8;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  p {
+    @apply my-4;
+  }
+
+  article * + h1,
+  article * + h2,
+  article * + h3,
+  article * + h4,
+  article * + h5,
+  article * + h6 {
+    @apply mt-10;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-[#e4e4e4] my-4 font-bold;
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+
   h2 {
-    margin-block: 0rem;
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  h4 {
+    @apply text-lg;
+  }
+
+  h5 {
+    @apply text-base;
+  }
+
+  h6 {
+    @apply text-sm;
   }
 
   @media (prefers-color-scheme: light) {

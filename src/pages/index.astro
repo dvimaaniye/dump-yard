@@ -42,21 +42,16 @@ const notForYouPosts = allPosts
 				</p>
 			</section>
 
-			<hr />
-
 			{
 				posts.length != 0 && (
 					<section>
-						<h2 class="font-bold text-3xl mb-4">For you</h2>
-						<ul class="space-y-4">
+						<h2 class="">For you</h2>
+						<ul class="">
 							{posts.map((post) => (
 								<li>
-									<a href={`/blog/${post.id}/`} class="flex ">
-										<h4 class="title ">{post.data.title}</h4>
-										&nbsp;-&nbsp;
-										<p class="date">
-											<FormattedDate date={post.data.pubDate} />
-										</p>
+									<a href={`/blog/${post.id}/`} class="">
+										{post.data.title} -
+										<FormattedDate date={post.data.pubDate} />
 									</a>
 								</li>
 							))}
@@ -68,15 +63,13 @@ const notForYouPosts = allPosts
 			{
 				notForYouPosts.length != 0 && (
 					<section>
-						<h2 class="font-bold text-3xl mb-4">Not for you</h2>
-						<ul class="space-y-4">
+						<h2 class="">Not for you</h2>
+						<ul class="">
 							{notForYouPosts.map((post) => (
 								<li>
-									<a href={`/blog/${post.id}/`} class="flex">
-										<h4 class="title">{post.data.title}</h4>&nbsp;-&nbsp;
-										<p class="date">
-											<FormattedDate date={post.data.pubDate} />
-										</p>
+									<a href={`/blog/${post.id}/`} class="">
+										{post.data.title} -
+										<FormattedDate date={post.data.pubDate} />
 									</a>
 								</li>
 							))}

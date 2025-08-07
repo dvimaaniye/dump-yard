@@ -29,13 +29,13 @@ const { title, description, pubDate, tags, updatedDate } = Astro.props;
 							)
 						}
 					</div>
-					<h1 class="text-4xl font-bold text-right">{title}</h1>
+					<h1 class="mt-0 text-right">{title}</h1>
 				</div>
-				<div class="space-y-5">
+				<div class="">
 					<slot />
 				</div>
 			</article>
-			<a href="/" class="block mt-8">Back to home</a>
 		</main>
+		<Footer />
 	</body>
 </html>

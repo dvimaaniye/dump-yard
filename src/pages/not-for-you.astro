@@ -1,7 +1,7 @@
 ---
 import BaseHead from "@/components/BaseHead.astro";
 import FormattedDate from "@/components/FormattedDate.astro";
-import Navbar from "@/components/Navbar.astro";
+import Footer from "@/components/Footer.astro";
 import { SITE_TITLE } from "@/consts";
 import { getCollection } from "astro:content";
 
@@ -19,23 +19,19 @@ const notForYouPosts = (await getCollection("blog"))
 		/>
 	</head>
 	<body>
-		<Navbar />
 		<main class="container">
 			<section>
 				<div class="text-right mb-4">
-					<p class="text-sm">Yapping pro max</p>
-					<h2 class="text-3xl font-bold">Not for you</h2>
+					<p class="text-sm mb-0">Yapping pro max</p>
+					<h1 class="mt-0">Not for you</h1>
 				</div>
 				<ol class="list-decimal space-y-4">
 					{
 						notForYouPosts.map((post) => (
 							<li>
-								<a href={`/blog/${post.id}/`} class="inline">
-									<h4 class="inline">{post.data.title}</h4>
-									&nbsp;-&nbsp;
-									<p class="inline">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
+								<a href={`/blog/${post.id}/`} class="">
+									{post.data.title} -
+									<FormattedDate date={post.data.pubDate} />
 								</a>
 							</li>
 						))
@@ -43,5 +39,6 @@ const notForYouPosts = (await getCollection("blog"))
 				</ol>
 			</section>
 		</main>
+		<Footer />
 	</body>
 </html>
